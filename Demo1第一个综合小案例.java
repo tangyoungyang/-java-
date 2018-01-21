@@ -6,22 +6,22 @@ package Demo;
  */
 import java.util.*;
 public class Demo1 {
-	//ÏÔÊ¾ÌáÊ¾ĞÅÏ¢µÄ·½·¨
+	//æ˜¾ç¤ºæç¤ºä¿¡æ¯çš„æ–¹æ³•
     public void notice(){
     	System.out.println();
     	System.out.println("****************************");
-    	System.out.println("          1--²åÈëÊı¾İ");
-    	System.out.println("          2--ÏÔÊ¾ËùÓĞÊı¾İ");
-    	System.out.println("          3--ÔÚÖ¸¶¨Î»ÖÃ´¦²åÈëÊı¾İ");
-    	System.out.println("          4--²éÑ¯ÄÜ±»3 Õû³ıµÄÊı¾İ");
-    	System.out.println("          0--ÍË³ö");
+    	System.out.println("          1--æ’å…¥æ•°æ®");
+    	System.out.println("          2--æ˜¾ç¤ºæ‰€æœ‰æ•°æ®");
+    	System.out.println("          3--åœ¨æŒ‡å®šä½ç½®å¤„æ’å…¥æ•°æ®");
+    	System.out.println("          4--æŸ¥è¯¢èƒ½è¢«3 æ•´é™¤çš„æ•°æ®");
+    	System.out.println("          0--é€€å‡º");
     	System.out.println("****************************");
-    	System.out.println("ÇëÊäÈë¶ÔÓ¦µÄÊı×Ö½øĞĞ²Ù×÷:");
+    	System.out.println("è¯·è¾“å…¥å¯¹åº”çš„æ•°å­—è¿›è¡Œæ“ä½œ:");
     }
-    //²åÈëÊı¾İµÄ·½·¨
+    //æ’å…¥æ•°æ®çš„æ–¹æ³•
     public void insertData(int[] arr) {
 		for(int i=0;i<9;i++) {
-			System.out.println("ÇëÊäÈëµÚ"+(i+1)+"¸öÊı¾İ");
+			System.out.println("è¯·è¾“å…¥ç¬¬"+(i+1)+"ä¸ªæ•°æ®");
 			Scanner input = new Scanner(System.in);			
 			arr[i] = input.nextInt();
 		}
@@ -29,7 +29,7 @@ public class Demo1 {
 			System.out.print(arr[i]+"  ");
 		}	
     }
-    //ÏÔÊ¾ËùÓĞÊı¾İµÄ·½·¨
+    //æ˜¾ç¤ºæ‰€æœ‰æ•°æ®çš„æ–¹æ³•
     public void showData(int[] a) {
     	for(int i=0;i<10;i++) {
     		if(a[i]!=0) {
@@ -37,7 +37,7 @@ public class Demo1 {
     		}
     	}
     }
-    //ÔÚÖ¸¶¨Î»ÖÃ´¦²åÈëÊı¾İ 
+    //åœ¨æŒ‡å®šä½ç½®å¤„æ’å…¥æ•°æ® 
     public void insertAtArray(int[] a,int n,int k) {
     	if(k == 9) {
     		a[9] = n;
@@ -47,12 +47,12 @@ public class Demo1 {
     			a[i]=a[i];
     		}
     		a[k-1]=n;
-    	}//ÀÏÊ¦£º²åÈëÊı¾İÕâ¿é»¹ÊÇÓĞµãÃ»¸ã¶®¡£¡£¡£
+    	}
     	for(int j:a) {
     		System.out.print(j+"  ");
     	}
     }
-    //²éÑ¯ÄÜ±»3Õû³ıµÄÊı¾İ
+    //æŸ¥è¯¢èƒ½è¢«3æ•´é™¤çš„æ•°æ®
     public void divThree(int[] a) {
     	for(int i=0;i<a.length;i++) {
     		if(a[i]%3==0) {
@@ -68,7 +68,7 @@ public class Demo1 {
 	    	Scanner input = new Scanner(System.in);
 	    	int n = input.nextInt();
 	    	if(n == 0) {
-	    		System.out.println("ÍË³ö³ÌĞò");
+	    		System.out.println("é€€å‡ºç¨‹åº");
 	    		break;
 	    	}else {
 	    		switch(n) {
@@ -79,9 +79,9 @@ public class Demo1 {
 	    			de.showData(arr);
 	    			break;
 	    		case 3:
-	    			System.out.println("ÇëÊäÈëÒª²åÈëµÄÊı¾İ£º");
+	    			System.out.println("è¯·è¾“å…¥è¦æ’å…¥çš„æ•°æ®ï¼š");
 	    			int i = input.nextInt();
-	    			System.out.println("ÇëÊäÈëÒª²åÈëµÄÎ»ÖÃ:");
+	    			System.out.println("è¯·è¾“å…¥è¦æ’å…¥çš„ä½ç½®:");
 	    			int j = input.nextInt();
 	    			de.insertAtArray(arr, i, j);
 	    			break;
