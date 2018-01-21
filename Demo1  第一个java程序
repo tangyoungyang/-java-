@@ -48,7 +48,7 @@ public class Demo1 {
     			a[i]=a[i];
     		}
     		a[k-1]=n;
-    	}//老师：插入数据这块还是有点没搞懂。。。
+    	}
     	for(int j:a) {
     		System.out.print(j+"  ");
     	}
